@@ -15,19 +15,45 @@ html {
 
 body{
     font-size: 16px;
+    font-family: 'IBM Plex Mono';
 }
 
 // #region global
+section{
+    @include all.fl();
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    max-width: 1920px;
+}
 
 h1{
     font-family: 'Raleway';
 }
 
-p{
-    font-family: 'IBM Plex Mono';
+p{    
+    color: var(--color-ptext);
+    font-size: clamp(1.6rem, 1dvw, 2.6rem);
+    line-height: 1.5;
 }
 
 // #endregion
+
+// #region light/dark-mode
+
+:root{
+    --color-bg1: white;
+    --color-bg2: black;
+
+    --color-ptext: #9C9C9C;
+    --color-hl1: white;
+    --color-hl2: black;
+
+    --color-btns: #3F8E00;
+    --color-btns-stroke: #62BA1B;
+}
 
 
 // #region fonts
