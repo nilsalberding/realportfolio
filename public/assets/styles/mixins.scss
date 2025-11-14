@@ -11,6 +11,10 @@
     background-color: var(--color-btns);
     border: 1px solid var(--color-btns-stroke);
     border-radius: 0.4rem;
-    box-shadow: 0px 0px 15px 0px var(--color-btns);
+    box-shadow: 0px 0px 10px 0px var(--color-btns);
+    transition: 0.3s;
+    &:hover{
+        box-shadow: 0px 0px 25px 0px var(--color-btns);
+    }
 }
 
