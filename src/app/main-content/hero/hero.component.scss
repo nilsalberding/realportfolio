@@ -1,0 +1,36 @@
+@use '../../../../public/assets/styles/all-styles.scss' as all;
+
+section {
+    background: var(--color-bg2);
+    height: 100dvh;
+
+    .content {
+        @include all.fl($flexdir: row, $gap: 10rem);
+
+        .intro {
+            @include all.fl($gap: 2.4rem, $alit: flex-start);
+
+            width: 60rem;
+            h1 {
+                color: var(--color-hl1);
+                font-size: clamp(2.4rem, 3.5dvw, 7rem);
+                font-size: 6rem;
+                font-weight: 700;
+            }
+            a{
+                @include all.button();
+                color: var(--color-hl1);
+            }
+        }
+
+        img{
+            width: clamp(28rem, 20dvw, 60rem);
+            height: clamp(28rem, 20dvw, 60rem);
+            width: 35rem;
+            height: 35rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+    }
+}
