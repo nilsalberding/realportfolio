@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { ToggleColorService } from '../services/toggle-color.service';
+import { ToggleColorService } from '../../services/toggle-color.service';
+
 
 @Component({
   selector: 'app-header',
