@@ -1,0 +1,7 @@
+@mixin fl($jc: center, $alit: center, $flexdir: column, $gap: 0, $rgap: 0, $cgap: 0, ) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $alit;
+    flex-direction: $flexdir;
+}
+
