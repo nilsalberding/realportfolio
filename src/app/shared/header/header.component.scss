@@ -43,6 +43,14 @@ header {
         @include all.fl($flexdir: row, $gap: 2.4rem);
     }
 
+    button{
+        border: 2px solid white;
+        border-radius: 50%;
+        height: 2.5rem;
+        width: 2.5rem;
+        background: var(--color-toggle);
+    }
+
 }
 
 svg {

@@ -13,27 +13,27 @@ html {
     font-size: 10px;
 }
 
-body{
+body {
     font-size: 16px;
     font-family: 'IBM Plex Mono';
 }
 
 // #region global
-section{
+section {
     @include all.fl();
     width: 100%;
 }
 
-.content{
+.content {
     width: 100%;
     max-width: 1920px;
 }
 
-h1{
+h1 {
     font-family: 'Raleway';
 }
 
-p{    
+p {
     color: var(--color-ptext);
     font-size: clamp(1.6rem, 1dvw, 2.6rem);
     line-height: 1.5;
@@ -43,9 +43,10 @@ p{
 
 // #region light/dark-mode
 
-:root{
+:root {
     --color-bg1: white;
     --color-bg2: black;
+    --color-bg3: #1b1b1b;
 
     --color-ptext: #9C9C9C;
     --color-hl1: white;
@@ -53,6 +54,24 @@ p{
 
     --color-btns: #3F8E00;
     --color-btns-stroke: #62BA1B;
+
+    // --color-toggle: #6e7f80
+    --color-toggle: linear-gradient(135deg, #dfdfdf, #6e7f80);
+}
+
+.natural-light {
+    --color-bg1: #36454f;
+    --color-bg2: #6e7f80;
+    --color-bg3: #1b1b1b;
+
+    --color-ptext: #dfdfdf;
+    --color-hl1: #dfdfdf;
+    --color-hl2: #dfdfdf;
+
+    --color-btns: #708090;
+    --color-btns-stroke: #8a9097;
+
+    --color-toggle: linear-gradient(135deg, black, #3F8E00);
 }
 
 
@@ -137,43 +156,57 @@ p{
 
 /* ibm-plex-mono-300 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../public/assets/fonts/ibm-plex-mono-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../public/assets/fonts/ibm-plex-mono-v20-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* ibm-plex-mono-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../public/assets/fonts/ibm-plex-mono-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../public/assets/fonts/ibm-plex-mono-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* ibm-plex-mono-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../public/assets/fonts/ibm-plex-mono-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../public/assets/fonts/ibm-plex-mono-v20-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* ibm-plex-mono-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../public/assets/fonts/ibm-plex-mono-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../public/assets/fonts/ibm-plex-mono-v20-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* ibm-plex-mono-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../public/assets/fonts/ibm-plex-mono-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../public/assets/fonts/ibm-plex-mono-v20-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 // #endregion
