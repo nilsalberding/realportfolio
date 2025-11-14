@@ -1,0 +1,32 @@
+@use '../../../../public/assets/styles/all-styles.scss' as all;
+
+section {
+    background: var(--color-bg1);
+
+    .content {
+        @include all.fl();
+
+        h2 {
+            color: var(--color-hl2);
+        }
+
+        .about-container {
+            @include all.fl($flexdir: row, $jc: space-around);
+            width: 100%;
+            span{
+                font-size: 3rem;
+                font-weight: 500;
+                color: var(--color-btns);
+            }
+
+            .about-left {
+                @include all.fl($alit: flex-start);
+                width: 40rem;
+
+            }
+            p {
+                width: 40rem;
+            }
+        }
+    }
+}

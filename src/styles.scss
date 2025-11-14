@@ -22,6 +22,7 @@ body {
 section {
     @include all.fl();
     width: 100%;
+    padding: 4rem;
 }
 
 .content {
@@ -31,6 +32,11 @@ section {
 
 h1 {
     font-family: 'Raleway';
+}
+h2{
+    font-family: 'Raleway';
+    margin-bottom: 3rem;
+    font-size: 4rem;
 }
 
 p {
@@ -55,7 +61,6 @@ p {
     --color-btns: #3F8E00;
     --color-btns-stroke: #62BA1B;
 
-    // --color-toggle: #6e7f80
     --color-toggle: linear-gradient(135deg, #dfdfdf, #6e7f80);
 }
 
@@ -73,7 +78,6 @@ p {
 
     --color-toggle: linear-gradient(135deg, black, #3F8E00);
 }
-
 
 // #region fonts
 

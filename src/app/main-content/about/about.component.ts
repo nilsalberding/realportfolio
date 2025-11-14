@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TypewriterComponent } from '../../shared/components/typewriter/typewriter.component';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [TypewriterComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
