@@ -1,0 +1,44 @@
+@use '../../../../public/assets/styles/all-styles.scss' as all;
+
+section{
+    background-color: var(--color-bg1);
+    .content{
+        @include all.fl();
+        h2{
+            color: var(--color-hl2);
+        }
+        .project-container{
+            @include all.fl($gap: 6rem);
+            .single-project{
+                @include all.fl($flexdir: row);
+                gap: 15rem;
+                .project-img{
+                    width: 36rem;
+                    height: 24rem;
+                    object-fit: cover;
+                    border-radius: 15px;
+                    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.575);
+                }
+                .project-desc{
+                    @include all.fl($gap: 3.2rem, $alit: flex-start);
+                    width: 45rem;
+                    .link-container{
+                        
+                        a{
+                            @include all.button();
+                            color: var(--color-btn-text);
+                            margin-right: 3.2rem;
+                        }
+                    }
+                }
+
+            }
+        }
+        .divide{
+            width: 60rem;
+            height: 0.1rem;
+            background: var(--color-divide);
+        }
+
+    }
+}
