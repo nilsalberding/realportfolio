@@ -1,1 +1,24 @@
-<p>tech-stack works!</p>
+<section>
+    <div class="content">
+        <h2>Mein Tech Stack</h2>
+        <div class="tech-container">
+
+            
+            <div class="tech-icons">
+                @for (item of icons; track $index; let index = $index) {
+                <div class="icon">
+                    <img src="{{icons[index].path}}" alt="">
+                    <span>{{icons[index].lable}}</span>
+                </div>
+                }
+
+            </div>
+            <p class="tech-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos amet numquam nulla, natus aperiam.
+                Asperiores odio deserunt error dignissimos libero architecto dolorum! Quasi ipsum exercitationem quo
+                consequatur similique dolorem?
+            </p>
+        </div>
+
+    </div>
+</section>
