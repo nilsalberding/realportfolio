@@ -46,6 +46,22 @@ p {
     line-height: 1.5;
 }
 
+a{
+    font-size: clamp(1.6rem, 1dvw, 2.6rem);
+    color: var(--color-ptext);
+}
+
+svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: var(--color-ptext);
+    transition: 0.3s;
+
+    &:hover{
+        fill: var(--color-btns);
+    }
+}
+
 // #endregion
 
 // #region light/dark-mode
