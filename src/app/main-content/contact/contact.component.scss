@@ -5,6 +5,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    font-size: 1.6rem;
 }
 
 section {
@@ -15,19 +16,34 @@ section {
 
         h2 {
             color: var(--color-hl1);
+            margin: 0;
         }
 
         .contact-head {
             @include all.fl($flexdir: row, $alit: flex-start, $gap: 4rem);
+            max-width: 95rem;
+
+            @include all.tablet {
+                flex-direction: column;
+                gap: 1.6rem;
+            }
 
             p {
-                width: 45rem;
+                width: 50%;
                 text-align: justify;
+
+                @include all.tablet {
+                    width: 100%;
+                }
             }
 
             .contact-data {
                 @include all.fl($alit: flex-start, $gap: 0.8rem);
-                width: 45rem;
+                width: 50%;
+
+                @include all.tablet {
+                    width: 100%;
+                }
 
                 a {
                     @include all.fl($flexdir: row, $gap: 1.6rem);
@@ -47,16 +63,25 @@ section {
 
         form {
             @include all.fl($gap: 1.6rem);
-            width: 95rem;
+            max-width: 95rem;
 
             .form-contact {
                 @include all.fl($flexdir: row, $gap: 1.6rem);
                 width: 100%;
 
+                @include all.tablet {
+                    flex-direction: column;
+                }
+
 
                 .form-input {
                     flex: 1;
                     height: 6rem;
+
+                    @include all.tablet {
+                        width: 100%;
+                        flex: auto;
+                    }
 
                     input {
                         width: 100%;
@@ -95,9 +120,13 @@ section {
             .form-submit {
                 @include all.fl($flexdir: row, $alit: flex-start, $gap: 1.6rem);
 
+                @include all.mobile {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
                 .checkbox {
                     @include all.fl($flexdir: row, $gap: 1.6rem, $alit: flex-start);
-                    
 
                     input {
                         width: 2rem;
@@ -108,13 +137,17 @@ section {
                     label {
                         color: var(--color-ptext);
                         margin-bottom: 2.4rem;
-                        a{
+                        @media(max-width:445px){
+                            margin-bottom: 4rem;
+                        }
+
+                        a {
                             color: var(--color-btns)
                         }
                     }
                 }
 
-                .btn-submit{
+                .btn-submit {
                     @include all.button();
                     color: var(--color-btn-text);
                     font-family: 'IBM Plex Mono';
