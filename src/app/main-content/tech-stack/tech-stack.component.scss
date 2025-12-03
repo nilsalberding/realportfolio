@@ -14,29 +14,61 @@ section {
             @include all.fl($flexdir: row);
             gap: 15rem;
 
+            @media(max-width: 1150px) {
+                gap: 7rem;
+            }
+
+            @media(max-width: 920px) {
+                flex-direction: column;
+            }
+
             .tech-icons {
-                width: 50rem;
+                max-width: 50rem;
                 @include all.fl($flexdir: row);
                 flex-wrap: wrap;
                 gap: 3.2rem;
-                
-                .icon{
+
+                .icon {
                     width: 10rem;
                     height: 10rem;
 
                     @include all.fl();
                     gap: 1.6rem;
-                    img{
+
+                    img {
                         width: 7rem;
                         height: 7rem;
+
                     }
-                    span{
+
+                    span {
                         color: var(--color-ptext);
                     }
                 }
+
+                @media(max-width: 1060px) {
+                    .icon {
+                        width: 8rem;
+                        height: 8rem;
+
+                        img {
+                            width: 5.5rem;
+                            height: 5.5rem;
+                        }
+                    }
+                }
+
+                @media(max-width: 920px) {
+                    max-width: 60rem;
+                }
             }
-            .tech-text{
-                width: 40rem;
+
+            .tech-text {
+                max-width: 40rem;
+
+                @media(max-width: 920px) {
+                    text-align: center;
+                }
             }
         }
     }
