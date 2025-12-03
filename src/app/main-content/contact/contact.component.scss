@@ -66,10 +66,7 @@ section {
                         font-family: 'IBM Plex Mono';
                         font-size: 1.6rem;
                     }
-
-
                 }
-
             }
 
             .form-message {
@@ -84,6 +81,7 @@ section {
                     border-radius: 0.8rem;
                     font-family: 'IBM Plex Mono';
                     font-size: 1.6rem;
+                    resize: none;
                 }
 
                 span {
@@ -92,7 +90,6 @@ section {
                     bottom: 0;
                     left: 0;
                 }
-
             }
 
             .form-submit {
