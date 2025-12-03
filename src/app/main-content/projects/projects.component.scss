@@ -18,6 +18,10 @@ section{
                     object-fit: cover;
                     border-radius: 15px;
                     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.575);
+                    transition: 300ms;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                 }
                 .project-desc{
                     @include all.fl($gap: 3.2rem, $alit: flex-start);
