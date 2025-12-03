@@ -5,6 +5,13 @@ footer {
     background: var(--color-bg3);
     padding: 1.6rem 4rem;
     color: var(--color-ptext);
+    @include all.tablet{
+        flex-direction: column-reverse;
+        gap: 1.6rem;
+    }
+    >span{
+        text-align: center;
+    }
 
 
     >a {
@@ -19,6 +26,9 @@ footer {
 
         .logo2 {
             color: var(--color-btns);
+        }
+        @include all.tablet{
+            order: 1;
         }
     }
 
