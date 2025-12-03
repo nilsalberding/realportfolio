@@ -53,13 +53,3 @@ header {
 
 }
 
-svg {
-    width: 2.4rem;
-    height: 2.4rem;
-    fill: var(--color-ptext);
-    transition: 0.3s;
-
-    &:hover{
-        fill: var(--color-btns);
-    }
-}
